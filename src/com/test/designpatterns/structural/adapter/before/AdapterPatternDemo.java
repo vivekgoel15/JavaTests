@@ -13,7 +13,7 @@ class Rectangle {
 	}
 }
 
-public class AdapterDemo {
+public class AdapterPatternDemo {
 	public static void main(String[] args) {
 		Object[] shapes = { new Line(), new Rectangle() };
 		int x1 = 10, y1 = 20;

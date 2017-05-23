@@ -9,7 +9,7 @@ package com.test.designpatterns.creational.factory.simplefactory;
  * @author vigoel
  *
  */
-public class SimpleFactoryDemo {
+public class SimpleFactoryPatternDemo {
 
 	public static void main(String[] args) {
 		PaymentMethodFactory factory = new PaymentMethodFactory();

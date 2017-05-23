@@ -14,6 +14,17 @@ package com.test.designpatterns.structural.adapter.after;
  * @author vigoel
  *
  */
+public class AdapterPatternDemo {
+	public static void main(String[] args) {
+		Shape[] shapes = { new RectangleAdapter(new Rectangle()), new LineAdapter(new Line()) };
+		int x1 = 10, y1 = 20;
+		int x2 = 30, y2 = 60;
+		for (Shape shape : shapes) {
+			shape.draw(x1, y1, x2, y2);
+		}
+	}
+}
+
 interface Shape {
 	void draw(int x, int y, int z, int j);
 }
@@ -58,16 +69,5 @@ class RectangleAdapter implements Shape {
 		int width = Math.abs(x2 - x1);
 		int height = Math.abs(y2 - y1);
 		adaptee.draw(x, y, width, height);
-	}
-}
-
-public class AdapterDemo {
-	public static void main(String[] args) {
-		Shape[] shapes = { new RectangleAdapter(new Rectangle()), new LineAdapter(new Line()) };
-		int x1 = 10, y1 = 20;
-		int x2 = 30, y2 = 60;
-		for (Shape shape : shapes) {
-			shape.draw(x1, y1, x2, y2);
-		}
 	}
 }

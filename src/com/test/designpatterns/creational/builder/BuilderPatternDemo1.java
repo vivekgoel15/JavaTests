@@ -10,7 +10,7 @@ import com.test.designpatterns.creational.builder.User.UserBuilder;
  * @author vigoel
  *
  */
-public class BuilderDemo {
+public class BuilderPatternDemo1 {
 
 	public static void main(String[] args) {
 		UserBuilder userBuilder = new UserBuilder("first", "last");

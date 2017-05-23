@@ -7,7 +7,8 @@ package com.test.designpatterns.structural.decorator;
  * 
  * The decorator pattern is often useful for adhering to the Single
  * Responsibility Principle, as it allows functionality to be divided between
- * classes with unique areas of concern.
+ * classes with unique areas of concern. e.g. if we do not want to modify the
+ * domain object for a specific case, then we can create wrapper class
  * 
  * e.g. Decorator pattern is used a lot in Java I/O classes, such as
  * FileInputStream, BufferedInputStream etc.
@@ -17,7 +18,7 @@ package com.test.designpatterns.structural.decorator;
  * @author vigoel
  *
  */
-public class DecoratorDemo {
+public class DecoratorPatternDemo {
 
 	public static void main(String[] args) {
 		Car sportsCar = new SportsCar(new BasicCar());

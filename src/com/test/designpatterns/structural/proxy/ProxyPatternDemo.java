@@ -22,7 +22,7 @@ package com.test.designpatterns.structural.proxy;
  * @author vigoel
  *
  */
-public class ProxyDemo {
+public class ProxyPatternDemo {
 
 	public static void main(String[] args) {
 

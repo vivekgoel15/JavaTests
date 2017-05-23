@@ -18,7 +18,7 @@ import java.util.List;
  * @author vigoel
  *
  */
-public class CompositeDemo {
+public class CompositePatternDemo1 {
 
 	public static void main(String[] args) {
 		Employee CEO = new Employee("John", "CEO", 30000);

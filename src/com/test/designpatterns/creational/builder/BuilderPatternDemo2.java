@@ -97,7 +97,7 @@ class Waiter {
 }
 
 /* A customer ordering a pizza. */
-public class BuilderDemo2 {
+public class BuilderPatternDemo2 {
 	public static void main(String[] args) {
 		Waiter waiter = new Waiter();
 		PizzaBuilder hawaiianPizzabuilder = new HawaiianPizzaBuilder();

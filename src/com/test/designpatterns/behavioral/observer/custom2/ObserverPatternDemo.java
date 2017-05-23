@@ -1,6 +1,6 @@
 package com.test.designpatterns.behavioral.observer.custom2;
 
-public class ObserverDemo2 {
+public class ObserverPatternDemo {
 
     public static void main(String args[]) {
            // this will maintain all loans information

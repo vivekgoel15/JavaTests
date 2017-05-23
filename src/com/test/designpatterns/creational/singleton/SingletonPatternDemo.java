@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @author vigoel
  *
  */
-public class SingletonDemo {
+public class SingletonPatternDemo {
 	public static void main(String[] args) {
 	}
 }

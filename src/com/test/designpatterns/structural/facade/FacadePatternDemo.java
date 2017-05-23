@@ -10,6 +10,14 @@ package com.test.designpatterns.structural.facade;
  * @author vigoel
  *
  */
+public class FacadePatternDemo {
+	public static void main(String args[]) {
+		OrderFacade orderFacade = new OrderFacade();
+		orderFacade.placeOrder("OR123456");
+		System.out.println("Order processing completed");
+	}
+}
+
 class InventoryApi {
 	public String checkInventory(String OrderId) {
 		return "Inventory checked";
@@ -43,13 +51,5 @@ class OrderFacade {
 		String step3 = pymt.deductPayment(orderId);
 		String step4 = email.sendEmail();
 		System.out.println("Following steps completed:" + step1 + " & " + step2 + " & " + step3 + " & " + step4);
-	}
-}
-
-public class FacadeDemo {
-	public static void main(String args[]) {
-		OrderFacade orderFacade = new OrderFacade();
-		orderFacade.placeOrder("OR123456");
-		System.out.println("Order processing completed");
 	}
 }
